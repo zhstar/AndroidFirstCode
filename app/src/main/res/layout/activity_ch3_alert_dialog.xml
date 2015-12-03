@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+              xmlns:codekun="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context="com.codekun.androidfirstcode.ch3.Ch3AlertDialogActivity">
+
+    <TextView
+        android:text="AlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/ch3_show_alertdialog_button"
+        android:text="AlertDialog"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/ch3_show_custom_alertdialog_button"
+        android:text="Custom AlertDialog"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.codekun.androidfirstcode.widgets.RoundImageView
+        android:id="@+id/ch3_alertdialog_roundImageView"
+        android:src="@drawable/koala"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

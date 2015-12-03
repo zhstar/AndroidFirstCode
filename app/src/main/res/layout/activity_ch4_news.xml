@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/ch4_news_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+              android:orientation="horizontal"
+                tools:context="com.codekun.androidfirstcode.ch4.Ch4NewsActivity">
+
+    <fragment
+        android:id="@+id/ch4_news_list_fragment"
+        android:name="com.codekun.androidfirstcode.ch4.Ch4NewsListFragment"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/ch4_news_content_fragment"
+        android:name="com.codekun.androidfirstcode.ch4.Ch4NewsContentFragment"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

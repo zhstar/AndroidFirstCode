@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--标题栏com.codekun.androidfirstcode.widgets.TitleBar属性-->
+    <declare-styleable name="TitleBar">
+        <attr name="leftBtn_src" format="reference" />
+        <attr name="leftBtn_visibility">
+            <flag name="gone" value="0" />
+            <flag name="visible" value="1" />
+            <flag name="invisible" value="2" />
+        </attr>
+        <attr name="rightBtn_src" format="reference" />
+        <attr name="rightBtn_visibility">
+            <flag name="gone" value="0" />
+            <flag name="visible" value="1" />
+            <flag name="invisible" value="2" />
+        </attr>
+        <attr name="title_text" format="reference|string" />
+    </declare-styleable>
+    <!--标题栏结束-->
+
+    <!--自定义 ImageView 属性-->
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" format="dimension" />
+        <attr name="type">
+            <flag name="circle" value="0" />
+            <flag name="round" value="1" />
+        </attr>
+    </declare-styleable>
+    <!--自定义 ImageView 结束-->
+
+</resources>

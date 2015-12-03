@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/ch3_activity_progress_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.codekun.androidfirstcode.ch3.Ch3ProgressDialogActivity">
+
+    <Button
+        android:id="@+id/ch3_show_progressdialog"
+        android:text="ProgressDialog"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_below="@+id/ch3_show_progressdialog"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

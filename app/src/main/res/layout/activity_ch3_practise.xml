@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.codekun.androidfirstcode.ch3.Ch3PractiseActivity">
+    <RelativeLayout
+        android:id="@+id/ch3_send_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#999999"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/ch3_send_button"
+            android:text="Send"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+        <EditText
+            android:id="@+id/ch3_send_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/ch3_send_button"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@id/ch3_send_view"
+        android:layout_alignParentTop="true">
+        <ListView
+            android:id="@+id/ch3_msg_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@android:color/transparent"
+            android:divider="@android:color/transparent">
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">第一行代码</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="ch2_action_settings">设置</string>
+    <string name="ch2_action_about">关于我</string>
+
+    <string name="title_activity_ch2_main">Ch2MainActivity</string>
+    <string name="title_activity_ch2_second">Ch2SecondActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_ch3_third">Ch3ThirdActivity</string>
+    <string name="title_activity_ch2_third">Ch2ThirdActivity</string>
+    <string name="title_activity_ch2_login">Ch2LoginActivity</string>
+    <string name="title_activity_ch2_launch_mode">Ch2LaunchModeActivity</string>
+    <string name="title_activity_ch3_main">Ch3MainActivity</string>
+    <string name="title_activity_ch3_text_view">Ch3TextViewActivity</string>
+    <string name="ch3_link_text">第二种实现超链接的方式：<a href="http://www.baidu.com">链接到百度</a></string>
+    <string name="title_activity_ch3_edit_text">Ch3EditTextActivity</string>
+    <string name="title_activity_ch3_image_view">Ch3ImageViewActivity</string>
+    <string name="title_activity_ch3_progress_bar">Ch3ProgressBarActivity</string>
+    <string name="title_activity_ch3_alert_dialog">Ch3AlertDialogActivity</string>
+    <string name="title_activity_ch3_progress_dialog">Ch3ProgressDialogActivity</string>
+    <string name="title_activity_ch3_practise">Ch3PractiseActivity</string>
+    <string name="title_activity_ch4_main">Ch4MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_ch4_fragment">Ch4FragmentActivity</string>
+    <string name="title_activity_ch4_news">Ch4NewsActivity</string>
+    <string name="title_activity_ch4_news_content">Ch4NewsContentActivity</string>
+    <string name="title_activity_ch5_main">Ch5MainActivity</string>
+    <string name="title_activity_ch5_network_change">Ch5NetworkChangeActivity</string>
+    <string name="title_activity_ch5_standard_broadcast">Ch5StandardBroadcastActivity</string>
+    <string name="title_activity_ch5_broadcast">Ch5BroadcastActivity</string>
+    <string name="title_activity_ch5_local_broadcast">Ch5LocalBroadcastActivity</string>
+    <string name="title_activity_ch5_practise">Ch5PractiseActivity</string>
+    <string name="title_activity_ch6_main">Ch6MainActivity</string>
+    <string name="title_activity_ch6_file">Ch6FileActivity</string>
+    <string name="title_activity_ch6_shared_preferencesf">Ch6SharedPreferencesfActivity</string>
+    <string name="title_activity_ch6_sqlite">Ch6SQLiteActivity</string>
+</resources>

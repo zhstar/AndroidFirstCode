@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+              xmlns:codekun="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+              android:orientation="vertical"
+                tools:context=".MainActivity">
+
+    <!--
+    <com.codekun.androidfirstcode.widgets.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        codekun:leftBtn_visibility="gone"
+        codekun:rightBtn_visibility="gone"
+        codekun:title_text="@string/app_name"
+        >
+    </com.codekun.androidfirstcode.widgets.TitleBar>
+    -->
+
+    <ListView
+        android:id="@+id/main_menu_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp">
+
+    </ListView>
+
+</LinearLayout>

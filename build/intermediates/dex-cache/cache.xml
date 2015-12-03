@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="G:\android\workspace\AndroidFirstCode\app\libs\gson-2.5.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="686c608d1805b6d4d425ec4459e88164ffc85870">
+        <dex dex="G:\android\workspace\AndroidFirstCode\app\build\intermediates\pre-dexed\debug\gson-2.5-bc58b20f372461a4f08e81798ba8c34bb2212e80.jar" />
+    </item>
+
+</items>

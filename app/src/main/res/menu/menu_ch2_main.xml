@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.codekun.androidfirstcode.ch2.Ch2MainActivity"
+    >
+    <item android:id="@+id/ch2_action_settings"
+          android:title="@string/ch2_action_settings"
+          android:orderInCategory="100"
+          android:icon="@android:drawable/ic_menu_save"
+          app:showAsAction="never"/>
+    <item android:id="@+id/ch2_action_about"
+          android:title="@string/ch2_action_about"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+</menu>
