@@ -15,6 +15,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.codekun.androidfirstcode.ch10.Ch10MainActivity;
+import com.codekun.androidfirstcode.ch11.Ch11MainActivity;
 import com.codekun.androidfirstcode.ch2.Ch2MainActivity;
 import com.codekun.androidfirstcode.ch3.Ch3MainActivity;
 import com.codekun.androidfirstcode.ch4.Ch4MainActivity;
@@ -58,7 +59,8 @@ public class MainActivity extends TitleBarActivity {
             Ch7MainActivity.class,
             Ch8MainActivity.class,
             Ch9MainActivity.class,
-            Ch10MainActivity.class
+            Ch10MainActivity.class,
+            Ch11MainActivity.class
     };
 
     private ListView mListView;

@@ -32,6 +32,9 @@
     <!-- Ch10:访问网格权限 -->
     <uses-permission android:name="android.permission.INTERNET"/>
 
+    <!-- Ch11:允许查找位置权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -250,6 +253,12 @@
         <activity android:name=".ch10.Ch10XMLActivity">
         </activity>
         <activity android:name=".ch10.Ch10JSONActivity">
+        </activity>
+        <activity android:name=".ch11.Ch11MainActivity">
+        </activity>
+        <activity android:name=".ch11.Ch11LocationActivity">
+        </activity>
+        <activity android:name=".ch11.Ch11ReverseLocationActivity">
         </activity>
     </application>
 

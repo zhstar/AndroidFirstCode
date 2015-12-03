@@ -2,11 +2,46 @@
 <items version="2" >
 
     <item
-        jar="G:\android\workspace\AndroidFirstCode\app\libs\gson-2.5.jar"
+        jar="H:\android\workspace\AndroidFirstCode\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="H:\android\workspace\AndroidFirstCode\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-fae8be1223c7065867d07e8289c276ce59499a00.jar" />
+    </item>
+    <item
+        jar="H:\android\workspace\AndroidFirstCode\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="H:\android\workspace\AndroidFirstCode\app\build\intermediates\pre-dexed\debug\classes-1f350139a588e12ea97d03e14f9a87544982e81a.jar" />
+    </item>
+    <item
+        jar="D:\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="H:\android\workspace\AndroidFirstCode\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-b68c8595ad7161256bdb15b0625f656ffd9caa8d.jar" />
+    </item>
+    <item
+        jar="H:\android\workspace\AndroidFirstCode\app\libs\gson-2.5.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="686c608d1805b6d4d425ec4459e88164ffc85870">
-        <dex dex="G:\android\workspace\AndroidFirstCode\app\build\intermediates\pre-dexed\debug\gson-2.5-bc58b20f372461a4f08e81798ba8c34bb2212e80.jar" />
+        <dex dex="H:\android\workspace\AndroidFirstCode\app\build\intermediates\pre-dexed\debug\gson-2.5-edfc5ed8a9d7ea27856c43b9064365fe246506ba.jar" />
+    </item>
+    <item
+        jar="H:\android\workspace\AndroidFirstCode\app\libs\volley-1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a057629939d15d66f2f3cdad25f44fbcfeb94250">
+        <dex dex="H:\android\workspace\AndroidFirstCode\app\build\intermediates\pre-dexed\debug\volley-1.0-f5276fc92d2767e8a43a234edb6b62e2b54b7906.jar" />
+    </item>
+    <item
+        jar="H:\android\workspace\AndroidFirstCode\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="H:\android\workspace\AndroidFirstCode\app\build\intermediates\pre-dexed\debug\classes-ec02bee010e2c7b9c3587e6f6f228e2523f3a182.jar" />
     </item>
 
 </items>

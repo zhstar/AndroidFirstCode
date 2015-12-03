@@ -64,6 +64,12 @@ public class Ch10JSONActivity extends AppCompatActivity {
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
+                        /*
+                        添加GSON库
+                        1、将jar文件拷到项目libs文件夹下
+                        2、在Android Studio Project列表找到jar文件，鼠标右键，选择 Add as library
+                        3、检查 app/build.gradle 是否已经加入 jar
+                         */
                         String data = AssetReader.read(mContext, "get_data.json").toString();
                         Log.d("AndroidFirstCode", "Data:" + data);
                         Gson gson = new Gson();
