@@ -91,6 +91,7 @@ public class MainActivity extends TitleBarActivity {
         }
 
 
+
         mListView = (ListView)findViewById(R.id.main_menu_listView);
         mListView.setAdapter(new CustomListAdapter(this, R.layout.list_item, mItems));
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
