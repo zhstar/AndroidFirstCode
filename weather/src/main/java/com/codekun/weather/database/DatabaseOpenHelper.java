@@ -26,7 +26,7 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper{
             "id integer primary key autoincrement," +
             "name text," +
             "code text," +
-            "provinceId integer)";
+            "provinceCode text)";
 
     /**
      * 创建Country表语句
@@ -35,7 +35,7 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper{
             "id integer primary key autoincrement," +
             "name text," +
             "code text," +
-            "cityId integer)";
+            "cityCode text)";
 
 
 

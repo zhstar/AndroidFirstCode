@@ -2,67 +2,39 @@
 <items version="2" >
 
     <item
-        jar="/Users/kun/Documents/develop/android/workspace/AndroidFirstCode/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jar="G:\android\workspace\AndroidFirstCode\weather\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
-        <dex dex="/Users/kun/Documents/develop/android/workspace/AndroidFirstCode/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-c0264d0eda41a44051e8ffbd5cf40320553b6b4e.jar" />
+        <dex dex="G:\android\workspace\AndroidFirstCode\weather\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-d7d9e1834b0c89ba19f6c8aae4c24e91630b70b6.jar" />
     </item>
     <item
-        jar="/Users/kun/Documents/develop/android/workspace/AndroidFirstCode/weather/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jar="G:\android\workspace\AndroidFirstCode\weather\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
-        <dex dex="/Users/kun/Documents/develop/android/workspace/AndroidFirstCode/weather/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-75ce5f9c8eadcf0f5625bf7e62b98e73fe08920c.jar" />
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="G:\android\workspace\AndroidFirstCode\weather\build\intermediates\pre-dexed\debug\classes-27fec8c8c87e949cbac18de74c2b3a654be73e34.jar" />
     </item>
     <item
-        jar="/Users/kun/Documents/develop/android/workspace/AndroidFirstCode/app/libs/volley-1.0.jar"
+        jar="G:\android\workspace\AndroidFirstCode\weather\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="G:\android\workspace\AndroidFirstCode\weather\build\intermediates\pre-dexed\debug\classes-2c3b03e069f6dbc90ae0437295069da63b947f7f.jar" />
+    </item>
+    <item
+        jar="G:\android\workspace\AndroidFirstCode\weather\libs\volley.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="a057629939d15d66f2f3cdad25f44fbcfeb94250">
-        <dex dex="/Users/kun/Documents/develop/android/workspace/AndroidFirstCode/app/build/intermediates/pre-dexed/debug/volley-1.0-4c75ae1cbf75cfb162f99b6d595cce7d907888c0.jar" />
+        <dex dex="G:\android\workspace\AndroidFirstCode\weather\build\intermediates\pre-dexed\debug\volley-bce22c598aa66329772f83586887a7d1be7d576a.jar" />
     </item>
     <item
-        jar="/Users/kun/Documents/develop/android/android-for-mac/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jar="G:\android\sdk\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
-        <dex dex="/Users/kun/Documents/develop/android/workspace/AndroidFirstCode/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-ade5340a75795875380d1b2cb2334f6892e806e3.jar" />
-    </item>
-    <item
-        jar="/Users/kun/Documents/develop/android/workspace/AndroidFirstCode/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="f8efd0096475e0daf054267b61544e10dc776503">
-        <dex dex="/Users/kun/Documents/develop/android/workspace/AndroidFirstCode/app/build/intermediates/pre-dexed/debug/classes-9e14a84ececce08eab422bac1295031d92cf37c2.jar" />
-    </item>
-    <item
-        jar="/Users/kun/Documents/develop/android/workspace/AndroidFirstCode/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
-        <dex dex="/Users/kun/Documents/develop/android/workspace/AndroidFirstCode/app/build/intermediates/pre-dexed/debug/classes-884c56ceac28a355752b173b81fd8aa6730da487.jar" />
-    </item>
-    <item
-        jar="/Users/kun/Documents/develop/android/workspace/AndroidFirstCode/weather/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
-        <dex dex="/Users/kun/Documents/develop/android/workspace/AndroidFirstCode/weather/build/intermediates/pre-dexed/debug/classes-94bdd97925c7f6d1b5c8c587d7cf294ec277e761.jar" />
-    </item>
-    <item
-        jar="/Users/kun/Documents/develop/android/workspace/AndroidFirstCode/weather/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="f8efd0096475e0daf054267b61544e10dc776503">
-        <dex dex="/Users/kun/Documents/develop/android/workspace/AndroidFirstCode/weather/build/intermediates/pre-dexed/debug/classes-3e3eec0f2889cec7a3d9a0b9a21e3b2326aefe5b.jar" />
-    </item>
-    <item
-        jar="/Users/kun/Documents/develop/android/workspace/AndroidFirstCode/app/libs/gson-2.5.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="686c608d1805b6d4d425ec4459e88164ffc85870">
-        <dex dex="/Users/kun/Documents/develop/android/workspace/AndroidFirstCode/app/build/intermediates/pre-dexed/debug/gson-2.5-8fed5b87f9e500eee5cb42520dc876a60acbb9b5.jar" />
+        <dex dex="G:\android\workspace\AndroidFirstCode\weather\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-6996db55b350e8204a3341cc57af0f28290fb51f.jar" />
     </item>
 
 </items>

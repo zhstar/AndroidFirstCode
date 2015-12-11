@@ -9,7 +9,7 @@ public class City {
     private int id;
     private String name;
     private String code;
-    private int provinceId;
+    private String provinceCode;
 
     /**
      * 序号
@@ -51,12 +51,12 @@ public class City {
      * 该市所属的省份序号
      * @return
      */
-    public int getProvinceId() {
-        return provinceId;
+    public String getProvinceCode() {
+        return provinceCode;
     }
 
-    public void setProvinceId(int provinceId) {
-        this.provinceId = provinceId;
+    public void setProvinceCode(String provinceCode) {
+        this.provinceCode = provinceCode;
     }
 
     /**
@@ -64,7 +64,7 @@ public class City {
      * @return
      */
     public String toString(){
-        return "City->[id="+id+",name="+name+",code="+code+",provinceId="+provinceId+"]";
+        return "City->[id="+id+",name="+name+",code="+code+",provinceCode="+ provinceCode +"]";
     }
 
 }
