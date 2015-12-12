@@ -1,11 +1,11 @@
 package com.codekun.weather;
 
 import android.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
 import com.codekun.common.core.TitleBarActivity;
+import com.codekun.weather.fragments.ProvinceListFragment;
 
 public class ChooseAreaActivity extends TitleBarActivity {
 

@@ -38,32 +38,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f186331c-ac1e-4680-a731-d8398b663f9b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_22_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/gson_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_22_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_22_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/volley.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/volley_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/utils/CKLog.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather/build.gradle" afterPath="$PROJECT_DIR$/weather/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/weather/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/ChooseAreaActivity.java" afterPath="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/ChooseAreaActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/WeatherActivity.java" afterPath="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/WeatherActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/database/DataLoader.java" afterPath="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/database/DataLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/database/Utility.java" afterPath="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/database/Utility.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather/src/main/res/layout/activity_weather.xml" afterPath="$PROJECT_DIR$/weather/src/main/res/layout/activity_weather.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather/src/main/res/layout/fragment_area_list.xml" afterPath="$PROJECT_DIR$/weather/src/main/res/layout/fragment_area_list.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather/src/main/res/layout/fragment_weather_info.xml" afterPath="$PROJECT_DIR$/weather/src/main/res/layout/fragment_weather_info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/weather/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weather/weather.iml" afterPath="$PROJECT_DIR$/weather/weather.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/CityListFragment.java" afterPath="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/fragments/CityListFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/CountryListFragment.java" afterPath="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/fragments/CountryListFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/ProvinceListFragment.java" afterPath="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/fragments/ProvinceListFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/WeatherInfoFragment.java" afterPath="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/fragments/WeatherInfoFragment.java" />
     </list>
     <ignored path="AndroidFirstCode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,50 +86,66 @@
         <entry file="file://$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/WeatherActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="68" column="40" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
+              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
               <folding>
-                <element signature="e#0#3064#0" expanded="true" />
+                <element signature="e#0#3531#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#1597#1598#0" expanded="true" />
-                <element signature="e#1645#1646#0" expanded="true" />
-                <element signature="e#2219#2519#0" expanded="true" />
-                <element signature="e#2518#2519#0" expanded="true" />
+                <element signature="e#1636#1637#0" expanded="true" />
+                <element signature="e#1684#1685#0" expanded="true" />
+                <element signature="e#2258#2558#0" expanded="true" />
+                <element signature="e#2557#2558#0" expanded="true" />
+                <element signature="e#2746#2747#0" expanded="true" />
+                <element signature="e#2816#2817#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataLoader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/database/DataLoader.java">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weather/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="46" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
+            <state vertical-scroll-proportion="-7.096774">
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="titlebar.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/res/layout/titlebar.xml">
+      <file leaf-file-name="HttpUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/codekun/common/utils/HttpUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.655738">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="android-designer">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="UpdateWeatherService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/app/UpdateWeatherService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="35" column="85" selection-start-line="35" selection-start-column="85" selection-end-line="35" selection-end-column="85" />
+              <folding>
+                <element signature="e#828#955#0" expanded="true" />
+                <element signature="e#954#955#0" expanded="true" />
+                <element signature="e#1759#2016#0" expanded="true" />
+                <element signature="e#2015#2016#0" expanded="true" />
+                <element signature="e#2079#2080#0" expanded="true" />
+                <element signature="e#2112#2113#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="WeatherInfoFragment.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/WeatherInfoFragment.java">
+        <entry file="file://$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/fragments/WeatherInfoFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47446084">
-              <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.40068105">
+              <caret line="71" column="63" selection-start-line="71" selection-start-column="63" selection-end-line="71" selection-end-column="63" />
               <folding>
-                <element signature="e#1946#2193#0" expanded="true" />
-                <element signature="e#2192#2193#0" expanded="true" />
+                <element signature="e#2334#2581#0" expanded="true" />
+                <element signature="e#2580#2581#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2975,11 +2980,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_ch12_light_sensor.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/codekun/androidfirstcode/ch12/Ch12LightSensorActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_ch12_accelerometer_sensor.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/codekun/androidfirstcode/ch12/Ch12AccelerometerSensorActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/codekun/androidfirstcode/ch12/Ch12MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_ch12_compass.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/codekun/androidfirstcode/app/CKApplication.java" />
@@ -2995,7 +2995,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/codekun/androidfirstcode/weather/database/WeatherOpenHelper.java" />
         <option value="$PROJECT_DIR$/weather/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/codekun/androidfirstcode/utils/CKLog.java" />
-        <option value="$PROJECT_DIR$/weather/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/utils/CKLog.java" />
         <option value="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/models/City.java" />
         <option value="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/models/Country.java" />
@@ -3023,9 +3022,15 @@
         <option value="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/ChooseAreaActivity.java" />
         <option value="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/database/DataLoader.java" />
         <option value="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/CountryListFragment.java" />
-        <option value="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/WeatherActivity.java" />
         <option value="$PROJECT_DIR$/weather/src/main/res/layout/fragment_weather_info.xml" />
         <option value="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/WeatherInfoFragment.java" />
+        <option value="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/app/AutoUpdateService.java" />
+        <option value="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/app/UpdateWeatherReceiver.java" />
+        <option value="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/app/UpdateWeatherService.java" />
+        <option value="$PROJECT_DIR$/weather/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/WeatherActivity.java" />
+        <option value="$PROJECT_DIR$/weather/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/fragments/WeatherInfoFragment.java" />
       </list>
     </option>
   </component>
@@ -3118,6 +3123,24 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidFirstCode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weather" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -3187,7 +3210,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3199,6 +3222,96 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="weather" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weather" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidFirstCode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weather" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidFirstCode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidFirstCode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidFirstCode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidFirstCode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -3507,11 +3620,11 @@
       <recent name="com.codekun.androidfirstcode" />
     </key>
     <key name="android.template.packageName">
+      <recent name="com.codekun.weather.app" />
       <recent name="com.codekun.weather" />
       <recent name="com.codekun.androidfirstcode.ch12" />
       <recent name="com.codekun.androidfirstcode.ch11" />
       <recent name="com.codekun.androidfirstcode.ch10" />
-      <recent name="com.codekun.androidfirstcode.ch9" />
     </key>
     <key name="android.template.parentActivityClass">
       <recent name="" />
@@ -3922,39 +4035,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_ch4_left_fragment.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-w820dp/activity_ch4_news.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62474644">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_ch4_news.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28600407">
-          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weather/src/main/res/layout/fragment_area_list.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.36065573">
@@ -4124,14 +4204,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/codekun/common/utils/HttpUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5493757">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/com/codekun/common/utils/CKLog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -4286,7 +4358,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/CityListFragment.java">
+    <entry file="file://$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/fragments/CityListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3507378">
           <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
@@ -4296,7 +4368,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/ProvinceListFragment.java">
+    <entry file="file://$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/fragments/ProvinceListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0499432">
           <caret line="76" column="72" selection-start-line="76" selection-start-column="72" selection-end-line="76" selection-end-column="72" />
@@ -4306,35 +4378,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/database/DataLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="46" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/CountryListFragment.java">
+    <entry file="file://$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/fragments/CountryListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32490975">
           <caret line="87" column="45" selection-start-line="87" selection-start-column="45" selection-end-line="87" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#2934#3528#0" expanded="false" />
-            <element signature="e#3527#3528#0" expanded="false" />
+            <element signature="e#3021#3615#0" expanded="false" />
+            <element signature="e#3614#3615#0" expanded="false" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/res/layout/titlebar.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.655738">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/weather/src/main/res/layout/fragment_weather_info.xml">
@@ -4348,28 +4401,96 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/WeatherActivity.java">
+    <entry file="file://$PROJECT_DIR$/common/src/main/res/layout/titlebar.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6439024">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/database/DataLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.15323496">
+          <caret line="59" column="46" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/app/UpdateWeatherReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34960273">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/app/UpdateWeatherService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="40" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
+          <caret line="35" column="85" selection-start-line="35" selection-start-column="85" selection-end-line="35" selection-end-column="85" />
           <folding>
-            <element signature="e#0#3064#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#1597#1598#0" expanded="true" />
-            <element signature="e#1645#1646#0" expanded="true" />
-            <element signature="e#2219#2519#0" expanded="true" />
-            <element signature="e#2518#2519#0" expanded="true" />
+            <element signature="e#828#955#0" expanded="true" />
+            <element signature="e#954#955#0" expanded="true" />
+            <element signature="e#1759#2016#0" expanded="true" />
+            <element signature="e#2015#2016#0" expanded="true" />
+            <element signature="e#2079#2080#0" expanded="true" />
+            <element signature="e#2112#2113#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/WeatherInfoFragment.java">
+    <entry file="file://$PROJECT_DIR$/weather/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47446084">
-          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.26666668">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/codekun/common/utils/HttpUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/WeatherActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding>
-            <element signature="e#1946#2193#0" expanded="true" />
-            <element signature="e#2192#2193#0" expanded="true" />
+            <element signature="e#0#3531#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1636#1637#0" expanded="true" />
+            <element signature="e#1684#1685#0" expanded="true" />
+            <element signature="e#2258#2558#0" expanded="true" />
+            <element signature="e#2557#2558#0" expanded="true" />
+            <element signature="e#2746#2747#0" expanded="true" />
+            <element signature="e#2816#2817#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.096774">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weather/src/main/java/com/codekun/weather/fragments/WeatherInfoFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40068105">
+          <caret line="71" column="63" selection-start-line="71" selection-start-column="63" selection-end-line="71" selection-end-column="63" />
+          <folding>
+            <element signature="e#2334#2581#0" expanded="true" />
+            <element signature="e#2580#2581#0" expanded="true" />
           </folding>
         </state>
       </provider>

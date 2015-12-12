@@ -30,14 +30,14 @@ package com.codekun.weather;
 
 import android.app.FragmentTransaction;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.widget.TextView;
 
 import com.codekun.common.core.TitleBarActivity;
 import com.codekun.common.utils.CKLog;
+import com.codekun.common.utils.HttpUtil;
+import com.codekun.weather.database.DataLoader;
+import com.codekun.weather.fragments.WeatherInfoFragment;
 
 public class WeatherActivity extends TitleBarActivity {
 
@@ -68,6 +68,18 @@ public class WeatherActivity extends TitleBarActivity {
                 Intent intent = new Intent(WeatherActivity.this, ChooseAreaActivity.class);
                // startActivity(intent);
                 startActivityForResult(intent, 1);
+            }
+        });
+
+        HttpUtil.sendPost("http://m.weather.com.cn/data/101190404.html",null, new HttpUtil.HttpCallbackListener() {
+            @Override
+            public void onFinish(String data) {
+                CKLog.d("codekun.com", "data:" + data);
+            }
+
+            @Override
+            public void onError(Exception e) {
+                CKLog.d("codekun.com", "Error Message:" + e.getMessage());
             }
         });
 
