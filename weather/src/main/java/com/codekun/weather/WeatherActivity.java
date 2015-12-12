@@ -26,18 +26,32 @@ http://www.weather.com.cn/data/cityinfo/101190404.html
 其中city表示城市名，cityid表示城市对应的天气代号，temp1和temp2表示气温是几度到几度，weather表示今日天气信息的描述，
 img1和 img2表示今日天气对应的图片，ptime表示天气发布的时间
  */
+
+/*
+有米广告：
+发布ID：6e184473587b806d
+应用密钥：57491bb9393956b9
+
+ */
+
 package com.codekun.weather;
 
 import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import com.codekun.common.core.TitleBarActivity;
 import com.codekun.common.utils.CKLog;
 import com.codekun.common.utils.HttpUtil;
 import com.codekun.weather.database.DataLoader;
 import com.codekun.weather.fragments.WeatherInfoFragment;
+
+import net.youmi.android.AdManager;
+import net.youmi.android.banner.AdSize;
+import net.youmi.android.banner.AdView;
+
 
 public class WeatherActivity extends TitleBarActivity {
 
@@ -51,6 +65,17 @@ public class WeatherActivity extends TitleBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+        //初始化有米广告模块
+        AdManager.getInstance(this).init("6e184473587b806d", "57491bb9393956b9", false);
+        // 实例化广告条
+        AdView adView = new AdView(this, AdSize.FIT_SCREEN);
+        // 获取要嵌入广告条的布局
+        LinearLayout adLayout=(LinearLayout)findViewById(R.id.adLayout);
+        // 将广告条加入到布局中
+        adLayout.addView(adView);
+
 
         getTitleBar().setLeftBtnVisibility(View.GONE);
         //getTitleBar().setRightBtnVisibility(View.GONE);
@@ -71,7 +96,7 @@ public class WeatherActivity extends TitleBarActivity {
             }
         });
 
-        HttpUtil.sendPost("http://m.weather.com.cn/data/101190404.html",null, new HttpUtil.HttpCallbackListener() {
+        /*HttpUtil.sendPost("http://m.weather.com.cn/data/101190404.html",null, new HttpUtil.HttpCallbackListener() {
             @Override
             public void onFinish(String data) {
                 CKLog.d("codekun.com", "data:" + data);
@@ -81,7 +106,9 @@ public class WeatherActivity extends TitleBarActivity {
             public void onError(Exception e) {
                 CKLog.d("codekun.com", "Error Message:" + e.getMessage());
             }
-        });
+        });*/
+
+
 
     }
 

@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.codekun.weather.ChooseAreaActivity;
 import com.codekun.weather.R;
 import com.codekun.weather.app.UpdateWeatherService;
 import com.codekun.weather.database.DataLoader;
@@ -59,6 +60,9 @@ public class WeatherInfoFragment extends Fragment {
             update(jsonData);
         }else{
             //选择城市
+            Intent intent = new Intent(getActivity(), ChooseAreaActivity.class);
+            // startActivity(intent);
+            getActivity().startActivityForResult(intent, 1);
         }
         return v;
     }
