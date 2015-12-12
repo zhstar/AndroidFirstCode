@@ -15,7 +15,6 @@ import com.codekun.weather.models.Province;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -55,7 +54,7 @@ public class DataLoader {
             @Override
             public void onResponse(String s) {
                 if (level == LEVEL_PROVINCE){
-                    if (Utility.handleProvincesResponse(DatabaseManager.getInstance(context), s)){
+                    if (Utility.handleProvincesData(DatabaseManager.getInstance(context), s)){
                         queryProvinces(context, null, listener);
                     }else{
                         if (listener != null){
@@ -63,7 +62,7 @@ public class DataLoader {
                         }
                     }
                 }else if(level == LEVEL_CITY){
-                    if (Utility.handleCitiesResponse(DatabaseManager.getInstance(context), s, parentLevelCode)){
+                    if (Utility.handleCitiesData(DatabaseManager.getInstance(context), s, parentLevelCode)){
                         queryCities(context, null, listener, parentLevelCode);
                     }else{
                         if (listener != null){
@@ -71,7 +70,7 @@ public class DataLoader {
                         }
                     }
                 }else if (level == LEVEL_COUNTRY){
-                    if (Utility.handleCountriesResponse(DatabaseManager.getInstance(context), s, parentLevelCode)){
+                    if (Utility.handleCountriesData(DatabaseManager.getInstance(context), s, parentLevelCode)){
                         queryCountries(context, null, listener, parentLevelCode);
                     }else{
                         if (listener != null){

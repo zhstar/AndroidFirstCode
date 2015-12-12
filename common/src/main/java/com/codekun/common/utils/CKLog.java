@@ -1,4 +1,4 @@
-package com.codekun.weather.utils;
+package com.codekun.common.utils;
 
 import android.util.Log;
 
@@ -8,7 +8,6 @@ import android.util.Log;
  */
 public class CKLog {
 
-    //什么都不输出
     public static final int NONE = 0;
     public static final int ERROR = 1;
     public static final int WARN = 2;

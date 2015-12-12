@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:id="@+id/titlebar"
+            android:background="#141414">
+    <ImageButton
+        android:id="@+id/titlebar_leftBtn"
+        android:src="@drawable/back_icon"
+        android:background="#141414"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+        android:id="@+id/titlebar_title"
+        android:text="标题"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+    <ImageButton
+        android:id="@+id/titlebar_rightBtn"
+        android:background="#141414"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/menu_icon"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

@@ -1,5 +1,8 @@
 package com.codekun.weather.database;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.text.TextUtils;
 
 import com.codekun.weather.models.City;
@@ -23,7 +26,7 @@ public class Utility {
     25|湖南,26|贵州,27|四川,28|广东,29|云南,30|广西,31|海南,32|香港,33|澳门,34|台湾
      * @return
      */
-    public synchronized static boolean handleProvincesResponse(DatabaseManager manager, String data){
+    public static boolean handleProvincesData(DatabaseManager manager, String data){
         //name:code
         Map<String, String> map = getMap(data);
         if (map != null){
@@ -48,7 +51,7 @@ public class Utility {
      * @param provinceId 所在省级id
      * @return
      */
-    public synchronized static boolean handleCitiesResponse(DatabaseManager manager, String data, String provinceId){
+    public static boolean handleCitiesData(DatabaseManager manager, String data, String provinceId){
         //name:code
         Map<String, String> map = getMap(data);
         if (map != null){
@@ -73,8 +76,8 @@ public class Utility {
      * @param cityId 所在市级id
      * @return
      */
-    public synchronized static boolean handleCountriesResponse(DatabaseManager manager, String data, String cityId){
-        //name:code
+    public static boolean handleCountriesData(DatabaseManager manager, String data, String cityId){
+        //{name:code}
         Map<String, String> map = getMap(data);
         if (map != null){
             for (Map.Entry entry : map.entrySet() ){
@@ -89,6 +92,29 @@ public class Utility {
             return true;
         }
         return false;
+    }
+
+    /**
+     * 保存天气信息
+     * @param context
+     * @param jsonData
+     */
+    public static void saveWeatherInfoData(Context context, String jsonData){
+        SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(context).edit();
+        editor.putString("weatherinfo", jsonData);
+        editor.commit();
+    }
+
+    /**
+     * 读取本地保存的天气信息
+     * @param context
+     * @return
+     */
+    public static String readWeatherInfoData(Context context){
+        String result = null;
+        SharedPreferences spf = PreferenceManager.getDefaultSharedPreferences(context);
+        result = spf.getString("weatherinfo", null);
+        return result;
     }
 
     /**

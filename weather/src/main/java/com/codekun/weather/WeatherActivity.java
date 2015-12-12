@@ -28,139 +28,62 @@ img1和 img2表示今日天气对应的图片，ptime表示天气发布的时间
  */
 package com.codekun.weather;
 
-import android.content.Context;
+import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.Toast;
+import android.view.Window;
+import android.widget.TextView;
 
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-import com.codekun.weather.database.DataLoader;
-import com.codekun.weather.database.DatabaseManager;
-import com.codekun.weather.models.City;
-import com.codekun.weather.models.Country;
-import com.codekun.weather.models.Province;
-import com.codekun.weather.utils.CKLog;
+import com.codekun.common.core.TitleBarActivity;
+import com.codekun.common.utils.CKLog;
 
-import java.util.ArrayList;
-import java.util.List;
+public class WeatherActivity extends TitleBarActivity {
 
-public class WeatherActivity extends AppCompatActivity {
+    private WeatherInfoFragment mWeatherInfoFragment;
 
-    private static final int LEVEL_PROVINCE = 0;
-    private static final int LEVEL_CITY = 1;
-    private static final int LEVEL_COUNTRY = 2;
-
-    private int currentLevel = LEVEL_PROVINCE;
-
-    private ListView areaListView;
-    private List<String> dataList = new ArrayList<>();
-    private ArrayAdapter<String> adapter;
-
-    private List<Province> provinces = null;
-    private List<City> cities = null;
-    private List<Country> countries = null;
-
-    private Context context;
+    @Override
+    protected int getLayoutResourceId() {
+        return R.layout.activity_weather;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_weather);
-        context = this;
-        areaListView = (ListView)findViewById(R.id.weather_area_listView);
 
-        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, dataList);
-        areaListView.setAdapter(adapter);
-        areaListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        getTitleBar().setLeftBtnVisibility(View.GONE);
+        //getTitleBar().setRightBtnVisibility(View.GONE);
+        setTitle("中国天气");
+
+        mWeatherInfoFragment = new WeatherInfoFragment();
+        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        ft.replace(R.id.weather_info_fragment_layout, mWeatherInfoFragment);
+        //ft.addToBackStack(null);
+        ft.commit();
+
+        getTitleBar().setRightBtnOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                if (currentLevel == LEVEL_PROVINCE){
-                    Province p = provinces.get(position);
-                    queryCities(p.getCode());
-                    currentLevel = LEVEL_CITY;
-                }else if (currentLevel == LEVEL_CITY){
-                    City c = cities.get(position);
-                    queryCountries(c.getCode());
-                    currentLevel = LEVEL_COUNTRY;
-                }else if (currentLevel == LEVEL_COUNTRY){
-                    //Toast.makeText(context, "开始加载 " + countries.get(position).getName() + " 天气数据", Toast.LENGTH_SHORT).show();
-                    queryWeatherInfo(countries.get(position).getCode());
-                }
+            public void onClick(View v) {
+                Intent intent = new Intent(WeatherActivity.this, ChooseAreaActivity.class);
+               // startActivity(intent);
+                startActivityForResult(intent, 1);
             }
         });
 
-        queryProvinces();
-
-
     }
 
-    private void queryProvinces(){
-        DataLoader.queryProvinces(this, DataLoader.getServerUrl(), new DataLoader.ResultListener(){
-            @Override
-            public void onCompleteProvince(List<Province> resultList) {
-                provinces = resultList;
-                List<String> list = new ArrayList<String>();
-                dataList.clear();
-                for (Province p : resultList){
-                    dataList.add(p.getName());
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1){
+            if (resultCode == RESULT_OK){
+                if (data != null){
+                    String countryName = data.getStringExtra("name");
+                    String countryCode = data.getStringExtra("code");
+                    mWeatherInfoFragment.update(countryName, countryCode);
                 }
-                adapter.notifyDataSetChanged();
-                areaListView.setSelection(0);
             }
-        });
+        }
     }
-
-    private void queryCities(String provinceCode){
-        DataLoader.queryCities(this, DataLoader.getServerUrl(provinceCode), new DataLoader.ResultListener(){
-            @Override
-            public void onCompleteCity(List<City> resultList) {
-                cities = resultList;
-                List<String> list = new ArrayList<String>();
-                dataList.clear();
-                for (City p : resultList){
-                    dataList.add(p.getName());
-                }
-                adapter.notifyDataSetChanged();
-                areaListView.setSelection(0);
-            }
-        }, provinceCode);
-    }
-
-    private void queryCountries(String cityCode){
-        DataLoader.queryCountries(this, DataLoader.getServerUrl(cityCode), new DataLoader.ResultListener(){
-            @Override
-            public void onCompleteCountry(List<Country> resultList) {
-                countries = resultList;
-                List<String> list = new ArrayList<String>();
-                dataList.clear();
-                for (Country p : resultList){
-                    dataList.add(p.getName());
-                }
-                adapter.notifyDataSetChanged();
-                areaListView.setSelection(0);
-            }
-        }, cityCode);
-    }
-
-    private void queryWeatherInfo(String countryCode){
-        DataLoader.queryWeatherInfo(this, countryCode, new DataLoader.ResultListener(){
-            @Override
-            public void onComplete(Object obj) {
-                Toast.makeText(context, "天气信息:" + (String)obj, Toast.LENGTH_SHORT).show();
-                CKLog.d("Weather", (String)obj);
-            }
-        });
-    }
-
-
-
 }
